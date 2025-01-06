@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("carts")
+@RequestMapping("/carts")
 @RequiredArgsConstructor
 public class CartController {
 
