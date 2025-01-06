@@ -7,3 +7,6 @@ spring:
     hibernate:
       ddl-auto: update
     sql-show: true
+
+server:
+  port: 8081
