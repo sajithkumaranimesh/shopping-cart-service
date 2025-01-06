@@ -34,7 +34,7 @@ public class CartServiceImpl implements CartService {
     public CartResponse retrieveById(Long id) {
         Optional<CartEntity> cartEntity = cartRepository.findById(id);
         if (cartEntity.isPresent()){
-            Product product = restTemplate.getForObject("http://localhost:8080/products/" + cartEntity.get().getProductId(), Product.class);
+            Product product = restTemplate.getForObject("http://CATALOG-MANAGEMENT-SERVICE/products/" + cartEntity.get().getProductId(), Product.class);
             return new CartResponse(
                     cartEntity.get().getId(),
                     cartEntity.get().getUserId(),
