@@ -2,15 +2,14 @@ package com.cinnamon.model;
 
 import lombok.*;
 
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
 @ToString
-public class Cart {
+public class CartResponse {
     private Long id;
     private Long userId;
-    private Long productId;
+    private Product product;
     private Integer quantity;
 }
